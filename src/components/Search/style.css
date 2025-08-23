@@ -1,0 +1,25 @@
+.search{
+    padding: 40px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.search__input{
+    padding: 10px 30px;
+    height: 60px;
+    display: flex;
+    border-radius: 10px;
+    background-color: #dad7d7ce;
+    width: 600px;
+
+}
+
+.search__input button {
+    width: 20px;
+}
+.search__input input{
+    width: 100%
+}

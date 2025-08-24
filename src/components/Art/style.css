@@ -1,0 +1,25 @@
+
+.art{
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.art__image img{
+    height: 300px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.art__details{
+    padding: 10px 15px;
+    background-color: #fff;
+    position: absolute;
+    width: 200px;
+    bottom: -5%;             
+    left: 50%;            
+    transform: translateX(-50%);
+    box-shadow: 10px 10px 10px #7e7e7e;
+}
+

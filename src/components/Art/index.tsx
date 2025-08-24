@@ -9,8 +9,6 @@ interface Art{
 
 
 const Art:React.FC<Art>=({id,title,image_id,artist_display})=>{
-
-
     return(
         <div>
             <div>

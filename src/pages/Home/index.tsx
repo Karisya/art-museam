@@ -6,7 +6,7 @@ interface Artworks{
     id:number;
     image_id:string;
     title:string;
-    artist:string
+    artist_display:string
 }
 
 const Home:React.FC=()=>{

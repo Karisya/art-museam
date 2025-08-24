@@ -1,4 +1,5 @@
 import React from "react";
+import './style.css'
 
 interface Art{
     id:number;
@@ -10,11 +11,11 @@ interface Art{
 
 const Art:React.FC<Art>=({id,title,image_id,artist_display})=>{
     return(
-        <div>
-            <div>
+        <div className="art">
+            <div className="art__image">
                 <img src={`https://www.artic.edu/iiif/2/${image_id}/full/400,/0/default.jpg`} alt={title} />
             </div>
-            <div>
+            <div className="art__details">
                 <p>{title}</p>
                 <p>{artist_display}</p>
             </div>

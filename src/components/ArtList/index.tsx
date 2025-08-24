@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
+import './style.css'
 
 interface Artworks{
     id:number;
@@ -19,7 +20,7 @@ interface ArtListProps{
 
 const ArtList:React.FC<ArtListProps>=({artworks})=>{
     return(
-    <Swiper
+    <Swiper className="swiper"
       modules={[ Navigation, Pagination]}
       navigation
       pagination={{ clickable: true }}

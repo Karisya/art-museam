@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 
-import Art from "../Atr";
-
-interface ArtListProps{
-    searchQuary:string
-}
+import Art from "../Art";
 
 interface Artworks{
     id:number;
@@ -13,25 +9,11 @@ interface Artworks{
     artist:string
 }
 
-const ArtList:React.FC=()=>{
-    const [artworks, setArtworks]=useState<Artworks[]>([])
+interface ArtListProps{
+    artworks:Artworks[]
+}
 
-
-    const fetchArts=async()=>{
-        try{
-            const response=await fetch('https://api.artic.edu/api/v1/artworks')
-            const data = await response.json()
-            setArtworks(data.data)
-            console.log(data.data)
-        }
-        catch(err){
-            console.log(err)
-        }
-    }
-
-    fetchArts()
-
-
+const ArtList:React.FC<ArtListProps>=({artworks})=>{
     return(
     <div>
         {artworks.map(art=>(

@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Search from './components/Search';
+import Home from './pages/Home';
 
 function App() {
 
   return (
-  <>
+  <div>
   <div className='header'>
     <nav className='header__menu'>
       <ul className='header__list'>
@@ -14,9 +14,9 @@ function App() {
       </ul>
     </nav>
   </div>
-  <Search/>
+    <Home/>
   
-  </>
+  </div>
 
   )
 }

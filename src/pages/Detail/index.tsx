@@ -41,6 +41,7 @@ const Detail:React.FC=()=>{
     return (
         <>
         {
+            !isLoading?
             art&&(
                 <div className="art-detail">
                     <div className="art-detail__holder">
@@ -65,6 +66,7 @@ const Detail:React.FC=()=>{
                     </div>
                 </div>
             )
+            :<p>isLoading...</p>
         }
         </>
     )

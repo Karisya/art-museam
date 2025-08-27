@@ -1,0 +1,40 @@
+.favorites{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+
+.favorite-card{
+    display: flex;
+    padding: 10px 20px;
+    column-gap: 20px;
+    box-shadow: 1px 1px 10px #a2a1a1;
+}
+
+.card__image{
+    min-width:150px;
+    flex: 0 1 30%;
+}
+
+.card__image img{
+    height: 100px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
+
+.art-favorites{
+    width: 30px;
+    flex: 0 1 20%;
+}
+

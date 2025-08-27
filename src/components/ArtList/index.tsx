@@ -11,14 +11,17 @@ interface Artworks{
     id:number;
     image_id:string;
     title:string;
-    artist_display:string
+    artist_title:string
 }
 
 interface ArtListProps{
     artworks:Artworks[]
 }
 
+
+
 const ArtList:React.FC<ArtListProps>=({artworks})=>{
+
     return(
     <Swiper className="swiper"
       modules={[ Navigation, Pagination]}
@@ -29,7 +32,7 @@ const ArtList:React.FC<ArtListProps>=({artworks})=>{
     >
       {artworks.map((art) => (
         <SwiperSlide key={art.id}>
-          <Art artist_display={art.artist_display} 
+          <Art artist_title={art.artist_title} 
                 title={art.title}
                 id={art.id}
                 image_id={art.image_id}

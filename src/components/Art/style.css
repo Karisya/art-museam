@@ -5,6 +5,10 @@
 }
 
 
+.art-favorites img{
+    width: 30px;
+}
+
 
 .art__image img{
     height: 300px;
@@ -13,13 +17,19 @@
 }
 
 .art__details{
+    display: flex;
+    align-items: center;
     padding: 10px 15px;
     background-color: #fff;
     position: absolute;
-    width: 200px;
+    width: 250px;
     bottom: -5%;             
     left: 50%;            
     transform: translateX(-50%);
     box-shadow: 10px 10px 10px #7e7e7e;
+    column-gap: 20px ;
 }
 
+.art__info{
+    flex: 0 1 90%;
+}
